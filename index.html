@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Lab fonts</title>
+    <link rel="stylesheet" href="./inter.css" />
+    <link rel="stylesheet" href="https://alembic.openlab.dev/everything.css" />
+    <style>
+      :root {
+        --measure: 30em;
+      }
+      body {
+        font-family: 'Inter var', Inter, system-ui;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      header {
+        padding-inline: 0.5em;
+      }
+      main {
+        flex: 1;
+        padding-inline: 0.5em;
+      }
+      .flow > * + * {
+        margin-block-start: 1em;
+      }
+      footer {
+        text-align: center;
+        font-style: italic;
+        opacity: 0.8;
+        padding: 0.5em;
+      }
+      code {
+        font-family: 'SF Mono', ui-monospace, monospace;
+        padding: 0.2em;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <center-layout> <h1>Open Lab fonts</h1> </center-layout>
+    </header>
+    <main>
+      <center-layout>
+        <article class="flow">
+          <p>These are some curated fonts for Open Lab deployments.</p>
+          <p>TODO: if this works out, make it a bit better.</p>
+          <p>Import from your HTML or CSS file:</p>
+          <ul>
+            <li><code>https://fonts.openlab.dev/inter.css</code></li>
+          </ul>
+        </article>
+      </center-layout>
+    </main>
+    <footer>
+      <center-layout>
+        <p>
+          Made by
+          <a href="https://openlab.ncl.ac.uk">Open Lab</a>
+          and
+          <a href="https://github.com/digitalinteraction/fonts.openlab.dev"
+            >Open Source</a
+          >. v0.0.0
+        </p>
+      </center-layout>
+    </footer>
+
+    <script
+      type="module"
+      src="https://alembic.openlab.dev/everything.js"
+    ></script>
+  </body>
+</html>
