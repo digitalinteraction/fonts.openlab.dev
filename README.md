@@ -1,14 +1,24 @@
-# fonts
+---
+permalink: /index.html
+layout: html.njk
+---
 
-...
+These are some curated fonts for Open Lab deployments.
 
-## Inter 3.19
+> TODO: if this works out, make it a bit better.
 
-[Website](https://rsms.me/inter/)
+## Fonts
 
-## Go prod
+These are the fonts we've added so far, [let us know](https://github.com/digitalinteraction/fonts.openlab.dev/issues) if you'd like another.
 
-- Build site with [11ty.dev](https://11ty.dev)
-- Better documentation
-- Best practises
-- More fonts
+### Inter
+
+- version 3.19
+- [Website](https://rsms.me/inter/)
+- `https://fonts.openlab.dev/inter/inter.css`
+
+### Rubik
+
+- version 2.001
+- [Website](https://github.com/googlefonts/rubik)
+- `https://fonts.openlab.dev/rubik/rubik.css`

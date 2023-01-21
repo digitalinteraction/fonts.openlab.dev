@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Eleventy">
     <title>Open Lab fonts</title>
     <link rel="stylesheet" href="./inter.css" />
     <link rel="stylesheet" href="https://alembic.openlab.dev/everything.css" />
@@ -47,6 +48,20 @@
         border-radius: 4px;
         background-color: #f1f1f1;
       }
+      blockquote {
+        border-left: 5px solid #aaa;
+        padding: 1em;
+        background: #eee;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      h3, h4, h5, h6 {
+        font-size: 1.2em;
+      }
     </style>
   </head>
   <body>
@@ -56,12 +71,7 @@
     <main>
       <center-layout>
         <article class="flow">
-          <p>These are some curated fonts for Open Lab deployments.</p>
-          <p>TODO: if this works out, make it a bit better.</p>
-          <p>Import from your HTML or CSS file:</p>
-          <ul>
-            <li><code>https://fonts.openlab.dev/inter.css</code></li>
-          </ul>
+          {{ content | safe }}
         </article>
       </center-layout>
     </main>
@@ -81,6 +91,7 @@
     <script
       type="module"
       src="https://alembic.openlab.dev/everything.js"
+      defer
     ></script>
   </body>
 </html>
