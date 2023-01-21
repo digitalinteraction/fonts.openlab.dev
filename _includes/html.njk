@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Eleventy">
     <title>Open Lab fonts</title>
-    <link rel="stylesheet" href="./inter.css" />
+    {% if fonts %}
+    {% for font in fonts %}
+    <link rel="stylesheet" href="{{ font.import | url }}" />
+    {% endfor %}
+    {% endif %}
     <link rel="stylesheet" href="https://alembic.openlab.dev/everything.css" />
     <style>
       :root {
         --measure: 30em;
       }
       body {
-        font-family: 'Inter var', Inter, system-ui;
+        font-family: var(--font, 'Inter var', Inter, system-ui);
         min-height: 100vh;
         min-height: 100dvh;
         display: flex;
@@ -39,14 +43,19 @@
         text-align: center;
         font-style: italic;
         opacity: 0.8;
-        padding: 0.5em;
+        padding: 1em;
       }
       code {
         font-family: 'SF Mono', ui-monospace, monospace;
-        padding: 0.2em;
+        padding: 0 0.2em;
         border: 2px solid #ccc;
         border-radius: 4px;
         background-color: #f1f1f1;
+        display: inline-block;
+      }
+      pre {
+        max-width: 100%;
+        overflow-x: auto;
       }
       blockquote {
         border-left: 5px solid #aaa;
@@ -83,7 +92,16 @@
           and
           <a href="https://github.com/digitalinteraction/fonts.openlab.dev"
             >Open Source</a
-          >. v0.0.0
+          >. v0.0.0 
+          — font:
+          <select id="fontPicker" name="font">
+            <option selected disabled>Default</option>
+            {% if fonts %}
+            {% for font in fonts %}
+            <option value="{{ font.family }}">{{ font.title }}</option>
+            {% endfor  %}
+            {% endif %}
+          </select>
         </p>
       </center-layout>
     </footer>
@@ -93,5 +111,10 @@
       src="https://alembic.openlab.dev/everything.js"
       defer
     ></script>
+    <script>
+      document.getElementById('fontPicker').oninput = e => {
+        document.documentElement.style.setProperty('--font', `'${e.target.value}'`)
+      }
+    </script>
   </body>
 </html>
