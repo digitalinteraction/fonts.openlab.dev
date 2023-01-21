@@ -16,14 +16,14 @@ These are the fonts we've added so far, [let us know](https://github.com/digital
 - Version 3.19
 - [Website](https://rsms.me/inter/)
 - `https://fonts.openlab.dev/inter/inter.css`
-- [Download]({{ '/inter/inter.zip' | url }})
+- [Download](https://fonts.openlab.dev/inter/inter.zip)
 
 ### Rubik
 
 - Version 2.001
 - [Website](https://github.com/googlefonts/rubik)
 - `https://fonts.openlab.dev/rubik/rubik.css`
-- [Download]({{ '/rubik/rubik.zip' | url }})
+- [Download](https://fonts.openlab.dev/rubik/rubik.zip)
 
 ## Importing fonts
 
