@@ -7,6 +7,12 @@ These are some curated fonts for Open Lab deployments.
 
 > TODO: if this works out, make it a bit better.
 
+Why another font service?
+
+- No tracking
+- Variable + woff2 formats
+- We're in control
+
 ## Fonts
 
 These are the fonts we've added so far, [let us know](https://github.com/digitalinteraction/fonts.openlab.dev/issues) if you'd like another.
