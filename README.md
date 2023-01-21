@@ -26,7 +26,7 @@ These are the fonts we've added so far, [let us know](https://github.com/digital
 
 ### Rubik
 
-- Version 2.001
+- Version 2.200
 - [Website](https://github.com/googlefonts/rubik)
 - `https://fonts.openlab.dev/rubik/rubik.css`
 - [Download](https://fonts.openlab.dev/rubik/rubik.zip)

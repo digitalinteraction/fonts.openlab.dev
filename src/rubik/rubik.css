@@ -4,16 +4,16 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url('Rubik-Black.woff2?v=2.001') format('woff2'),
-    url('Rubik-Black.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Black.woff2?v=2.200') format('woff2'),
+    url('Rubik-Black.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url('Rubik-BlackItalic.woff2?v=2.001') format('woff2'),
-    url('Rubik-BlackItalic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-BlackItalic.woff2?v=2.200') format('woff2'),
+    url('Rubik-BlackItalic.ttf?v=2.200') format('opentype');
 }
 
 /* 800 */
@@ -22,16 +22,16 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('Rubik-ExtraBold.woff2?v=2.001') format('woff2'),
-    url('Rubik-ExtraBold.ttf?v=2.001') format('opentype');
+  src: url('Rubik-ExtraBold.woff2?v=2.200') format('woff2'),
+    url('Rubik-ExtraBold.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: italic;
   font-weight: 800;
   font-display: swap;
-  src: url('Rubik-ExtraBoldItalic.woff2?v=2.001') format('woff2'),
-    url('Rubik-ExtraBoldItalic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-ExtraBoldItalic.woff2?v=2.200') format('woff2'),
+    url('Rubik-ExtraBoldItalic.ttf?v=2.200') format('opentype');
 }
 
 /* 700 */
@@ -40,16 +40,16 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('Rubik-Bold.woff2?v=2.001') format('woff2'),
-    url('Rubik-Bold.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Bold.woff2?v=2.200') format('woff2'),
+    url('Rubik-Bold.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('Rubik-BoldItalic.woff2?v=2.001') format('woff2'),
-    url('Rubik-BoldItalic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-BoldItalic.woff2?v=2.200') format('woff2'),
+    url('Rubik-BoldItalic.ttf?v=2.200') format('opentype');
 }
 
 /* 600 */
@@ -58,16 +58,16 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('Rubik-SemiBoldItalic.woff2?v=2.001') format('woff2'),
-    url('Rubik-SemiBoldItalic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-SemiBoldItalic.woff2?v=2.200') format('woff2'),
+    url('Rubik-SemiBoldItalic.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('Rubik-SemiBold.woff2?v=2.001') format('woff2'),
-    url('Rubik-SemiBold.ttf?v=2.001') format('opentype');
+  src: url('Rubik-SemiBold.woff2?v=2.200') format('woff2'),
+    url('Rubik-SemiBold.ttf?v=2.200') format('opentype');
 }
 
 /* 500 */
@@ -76,16 +76,16 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('Rubik-Medium.woff2?v=2.001') format('woff2'),
-    url('Rubik-Medium.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Medium.woff2?v=2.200') format('woff2'),
+    url('Rubik-Medium.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url('Rubik-MediumItalic.woff2?v=2.001') format('woff2'),
-    url('Rubik-MediumItalic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-MediumItalic.woff2?v=2.200') format('woff2'),
+    url('Rubik-MediumItalic.ttf?v=2.200') format('opentype');
 }
 
 /* 400 */
@@ -94,16 +94,16 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('Rubik-Regular.woff2?v=2.001') format('woff2'),
-    url('Rubik-Regular.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Regular.woff2?v=2.200') format('woff2'),
+    url('Rubik-Regular.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('Rubik-Italic.woff2?v=2.001') format('woff2'),
-    url('Rubik-Italic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Italic.woff2?v=2.200') format('woff2'),
+    url('Rubik-Italic.ttf?v=2.200') format('opentype');
 }
 
 /* 300 */
@@ -112,16 +112,16 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('Rubik-Light.woff2?v=2.001') format('woff2'),
-    url('Rubik-Light.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Light.woff2?v=2.200') format('woff2'),
+    url('Rubik-Light.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik';
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url('Rubik-LightItalic.woff2?v=2.001') format('woff2'),
-    url('Rubik-LightItalic.ttf?v=2.001') format('opentype');
+  src: url('Rubik-LightItalic.woff2?v=2.200') format('woff2'),
+    url('Rubik-LightItalic.ttf?v=2.200') format('opentype');
 }
 
 /* Variable */
@@ -130,14 +130,14 @@
   font-style: normal;
   font-weight: 300 900;
   font-display: swap;
-  src: url('Rubik-VariableFont_wght.woff2?v=2.001') format('woff2'),
-    url('Rubik-VariableFont_wght.ttf?v=2.001') format('opentype');
+  src: url('Rubik-VariableFont_wght.woff2?v=2.200') format('woff2'),
+    url('Rubik-VariableFont_wght.ttf?v=2.200') format('opentype');
 }
 @font-face {
   font-family: 'Rubik var';
   font-style: italic;
   font-weight: 300 900;
   font-display: swap;
-  src: url('Rubik-Italic-VariableFont_wght.woff2?v=2.001') format('woff2'),
-    url('Rubik-Italic-VariableFont_wght.ttf?v=2.001') format('opentype');
+  src: url('Rubik-Italic-VariableFont_wght.woff2?v=2.200') format('woff2'),
+    url('Rubik-Italic-VariableFont_wght.ttf?v=2.200') format('opentype');
 }
