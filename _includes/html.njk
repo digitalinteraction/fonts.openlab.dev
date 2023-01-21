@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Eleventy">
     <title>Open Lab fonts</title>
-    {% if fonts %}
-    {% for font in fonts %}
-    <link rel="stylesheet" href="{{ font.import | url }}" />
-    {% endfor %}
-    {% endif %}
+    <link rel="stylesheet" href="{{ '/inter/inter.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/rubik/rubik.css' | url }}" />
     <link rel="stylesheet" href="https://alembic.openlab.dev/everything.css" />
     <style>
       :root {
@@ -95,12 +92,8 @@
           >. v0.0.0 
           — font:
           <select id="fontPicker" name="font">
-            <option selected disabled>Default</option>
-            {% if fonts %}
-            {% for font in fonts %}
-            <option value="{{ font.family }}">{{ font.title }}</option>
-            {% endfor  %}
-            {% endif %}
+            <option selected value="Inter var">Inter</option>
+            <option value="Rubik var">Rubik</option>
           </select>
         </p>
       </center-layout>
