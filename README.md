@@ -5,8 +5,6 @@ layout: html.njk
 
 These are some curated fonts for Open Lab deployments.
 
-> TODO: if this works out, make it a bit better.
-
 Why another font service?
 
 - No tracking
