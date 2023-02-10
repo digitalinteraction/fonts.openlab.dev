@@ -8,10 +8,11 @@
     <title>Open Lab fonts</title>
     <link rel="stylesheet" href="{{ '/inter/inter.css' | url }}" />
     <link rel="stylesheet" href="{{ '/rubik/rubik.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/playfair/playfair.css' | url }}" />
     <link rel="stylesheet" href="https://alembic.openlab.dev/everything.css" />
     <style>
       :root {
-        --measure: 30em;
+        --measure: 40em;
       }
       body {
         font-family: var(--font, 'Inter var', Inter, system-ui);
@@ -52,7 +53,12 @@
       }
       pre {
         max-width: 100%;
+        width: 100%;
         overflow-x: auto;
+        font-size: 16px;
+      }
+      pre > code {
+        width: 100%;
       }
       blockquote {
         border-left: 5px solid #aaa;
@@ -75,7 +81,7 @@
       <center-layout> <h1>Open Lab fonts</h1> </center-layout>
     </header>
     <main>
-      <center-layout>
+      <center-layout gutters="2rem">
         <article class="flow">
           {{ content | safe }}
         </article>
@@ -94,6 +100,7 @@
           <select id="fontPicker" name="font">
             <option selected value="Inter var">Inter</option>
             <option value="Rubik var">Rubik</option>
+            <option value="Playfair Display var">Playfair</option>
           </select>
         </p>
       </center-layout>

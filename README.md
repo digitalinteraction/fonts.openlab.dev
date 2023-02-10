@@ -21,35 +21,57 @@ These are the fonts we've added so far, [let us know](https://github.com/digital
 
 - Version 3.19
 - [Website](https://rsms.me/inter/)
-- `https://fonts.openlab.dev/inter/inter.css`
 - [Download](https://fonts.openlab.dev/inter/inter.zip)
+
+```css
+@import 'https://fonts.openlab.dev/inter/inter.css';
+
+html {
+  font-family: 'Inter var', 'Inter', system-ui, sans-serif;
+}
+```
 
 ### Rubik
 
 - Version 2.200
 - [Website](https://github.com/googlefonts/rubik)
-- `https://fonts.openlab.dev/rubik/rubik.css`
 - [Download](https://fonts.openlab.dev/rubik/rubik.zip)
+
+```css
+@import 'https://fonts.openlab.dev/rubik/rubik.css';
+
+html {
+  font-family: 'Rubik var', 'Rubik', system-ui, sans-serif;
+}
+```
+
+### Playfair
+
+- Version 1.202
+- [Website](https://github.com/clauseggers/Playfair)
+- [Download](https://fonts.openlab.dev/playfair/playfair.zip)
+
+```css
+@import 'https://fonts.openlab.dev/playfair/playfair.css';
+
+html {
+  font-family: 'Playfair Display var', 'Playfair Display', serif;
+}
+```
 
 ## Importing fonts
 
 Take the css file of the font and link to it from your HTML document like this:
 
-```html
-<link rel="stylesheet" href="URL" />
-```
+`<link rel="stylesheet" href="URL" />`
 
 or import it from your existing style sheet:
 
-```css
-@import 'URL';
-```
+`@import 'URL';`
 
 You might want a [preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) tag to speed things up:
 
-```html
-<link rel="preconnect" href="https://fonts.openlab.dev" />
-```
+`<link rel="preconnect" href="https://fonts.openlab.dev" />`
 
 ## Self-hosting
 
