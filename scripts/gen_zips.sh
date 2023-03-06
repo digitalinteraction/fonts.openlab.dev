@@ -1,11 +1,10 @@
 #!/usr/bin/env sh
 
-FOLDERS=$(ls src)
-
-for DIR in $FOLDERS
+for DIR in src/*
 do
-  pushd "src/$DIR"
-  zip --update "$DIR.zip" --recurse-paths --exclude "$DIR.zip" $(ls | sort)
-  unzip -l "$DIR.zip"
+  NAME=$(basename "$DIR")
+  pushd "$DIR"
+  zip --update "$NAME.zip" --recurse-paths --exclude "$NAME.zip" $(ls | sort)
+  unzip -l "$NAME.zip"
   popd
 done

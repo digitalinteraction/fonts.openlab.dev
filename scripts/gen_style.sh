@@ -13,13 +13,14 @@ then
   exit 1;
 fi
 
-STYLE="$DIR/$DIR.css"
+NAME=$(basename "$DIR")
+STYLE="$DIR/$NAME.css"
 echo > $STYLE
 
-for FILE in $(ls $DIR)
+for FILE in $(ls "$DIR")
 do
   echo "@font-face {" >> $STYLE
-  echo "  font-family: '$DIR';" >> $STYLE
+  echo "  font-family: '$NAME';" >> $STYLE
   echo "  font-style: normal;" >> $STYLE
   echo "  font-weight: normal;" >> $STYLE
   echo "  font-display: swap;" >> $STYLE

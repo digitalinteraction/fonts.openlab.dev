@@ -9,7 +9,7 @@ Why another font service?
 
 - No tracking
 - Variable + woff2 formats
-- We're in control
+- No reliance on 3rd party services
 
 ## Fonts
 
@@ -54,6 +54,20 @@ html {
 
 html {
   font-family: 'Playfair Display var', 'Playfair Display', serif;
+}
+```
+
+### Open Sans
+
+- Version ebedbda ([git commit](https://github.com/googlefonts/opensans/commit/ebedbda589fe5bd861b02325aca98c86ad845251))
+- [Website](https://www.opensans.com/)
+- [Download](https://fonts.openlab.dev/open-sans/open-sans.zip)
+
+```css
+@import 'https://fonts.openlab.dev/open-sans/open-sans.css';
+
+html {
+  font-family: 'Open Sans var', 'Open Sans', system-ui, serif;
 }
 ```
 

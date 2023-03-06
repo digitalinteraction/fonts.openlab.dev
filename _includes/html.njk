@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ '/inter/inter.css' | url }}" />
     <link rel="stylesheet" href="{{ '/rubik/rubik.css' | url }}" />
     <link rel="stylesheet" href="{{ '/playfair/playfair.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/open-sans/open-sans.css' | url }}" />
     <link rel="stylesheet" href="https://alembic.openlab.dev/everything.css" />
     <style>
       :root {
@@ -35,7 +36,10 @@
         padding-inline: 0.5em;
       }
       .flow > * + * {
-        margin-block-start: 1em;
+        margin-block-start: var(--flow, 1em);
+      }
+      h3 {
+        --flow: 2em;
       }
       footer {
         text-align: center;
@@ -68,12 +72,18 @@
       }
       h1 {
         font-size: 2em;
+        line-height: 1.2;
       }
       h2 {
         font-size: 1.5em;
+        line-height: 1.2;
       }
       h3, h4, h5, h6 {
         font-size: 1.2em;
+        line-height: 1.2;
+      }
+      p, ul, pre, blockquote {
+        margin: 0;
       }
     </style>
   </head>
@@ -102,6 +112,7 @@
             <option selected value="Inter var">Inter</option>
             <option value="Rubik var">Rubik</option>
             <option value="Playfair Display var">Playfair</option>
+            <option value="Open Sans var">Open Sans</option>
           </select>
         </p>
       </center-layout>
