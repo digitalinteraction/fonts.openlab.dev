@@ -75,7 +75,7 @@ html {
 
 ### Montserrat
 
-- [v7.222](https://github.com/JulietaUla/Montserrat/releases/tag/v7.222)
+- Version 7.222
 - [Website](https://github.com/JulietaUla/Montserrat)
 - [Download](https://fonts.openlab.dev/montserrat/montserrat.zip)
 
