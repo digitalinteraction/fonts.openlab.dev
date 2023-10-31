@@ -11,6 +11,8 @@ Why another font service?
 - Variable + woff2 formats
 - No reliance on 3rd party services
 
+{% fontPicker %}
+
 ## Fonts
 
 These are the fonts we've added so far, [let us know](https://github.com/digitalinteraction/fonts.openlab.dev/issues) if you'd like another.
@@ -68,6 +70,20 @@ html {
 
 html {
   font-family: 'Open Sans var', 'Open Sans', system-ui, serif;
+}
+```
+
+### Montserrat
+
+- [v7.222](https://github.com/JulietaUla/Montserrat/releases/tag/v7.222)
+- [Website](https://github.com/JulietaUla/Montserrat)
+- [Download](https://fonts.openlab.dev/montserrat/montserrat.zip)
+
+```css
+@import 'https://fonts.openlab.dev/montserrat/montserrat.css';
+
+html {
+  font-family: 'Montserrat', system-ui, serif;
 }
 ```
 
