@@ -103,4 +103,4 @@ You might want a [preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 ## Self-hosting
 
-You can also download an entire family using the "zip" URL, then integrate with your project however you like.
+You can also download an entire family using the "download" link to get all assets in a zip, then you integrate with your project however you like.

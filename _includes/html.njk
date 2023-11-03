@@ -31,7 +31,7 @@
       href="{{ '/montserrat/montserrat.css' | url }}"
       data-font="Montserrat"
     />
-    <!-- @openlab/alembic inject-css -->
+    <link rel="stylesheet" href="https://alembic.openlab.dev/labcoat.css" />
     <style>
       :root {
         --measure: 40em;
@@ -52,19 +52,6 @@
       }
       #fontPicker {
         color: inherit;
-      }
-      /* TODO: migrate back to labcoat */
-      code {
-        border: var(--s-5) solid var(--border);
-      }
-      /* TODO: migrate back to labcoat */
-      ul,
-      ol {
-        padding-inline-start: 1em;
-      }
-      /* TODO: migrate back to labcoat */
-      pre > code {
-        display: block;
       }
       h3 {
         --flow: 2em;

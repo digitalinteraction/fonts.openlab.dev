@@ -1,7 +1,11 @@
 {
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@openlab/alembic": "^0.3.2"
+    "@11ty/eleventy": "^2.0.1",
+    "@openlab/alembic": "^0.3.3"
+  },
+  "scripts": {
+    "build": "npx eleventy",
+    "start": "npx eleventy --serve"
   }
 }
