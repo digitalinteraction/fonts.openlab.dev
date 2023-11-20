@@ -17,11 +17,14 @@ Why another font service?
 
 These are the fonts we've added so far, [let us know](https://github.com/digitalinteraction/fonts.openlab.dev/issues) if you'd like another.
 
+> The `css` examples below are simplified, make sure to read [Importing fonts](#importing-fonts) below.
+
 ### Inter
 
-- Version 3.19
+- Version 4.0
 - [Website](https://rsms.me/inter/)
 - [Download](https://fonts.openlab.dev/inter/inter.zip)
+- Custom axis **opsz** `14–32` (optical size)
 
 ```css
 @import 'https://fonts.openlab.dev/inter/inter.css';
@@ -83,7 +86,7 @@ html {
 @import 'https://fonts.openlab.dev/montserrat/montserrat.css';
 
 html {
-  font-family: 'Montserrat', system-ui, serif;
+  font-family: 'Montserrat var', 'Montserrat', system-ui, serif;
 }
 ```
 
@@ -97,9 +100,24 @@ or import it from your existing style sheet:
 
 `@import 'URL';`
 
-You might want a [preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) tag to speed things up:
+You should add a [preconnect](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) tag to speed things up:
 
-`<link rel="preconnect" href="https://fonts.openlab.dev" />`
+```html
+<link rel="preconnect" href="https://fonts.openlab.dev/" />
+```
+
+You should test for variable fonts using a `@supports` media query:
+
+```css
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'Inter var', system-ui, sans-serif;
+  }
+}
+```
 
 ## Self-hosting
 

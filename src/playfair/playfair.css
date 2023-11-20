@@ -94,7 +94,7 @@ Variable font.
 Usage:
   html { font-family: 'Playfair Display', sans-serif; }
   @supports (font-variation-settings: normal) {
-    html { font-family: 'Inter var', sans-serif; }
+    html { font-family: 'Playfair Display var', serif; }
   }
 */
 @font-face {
@@ -102,7 +102,6 @@ Usage:
   font-weight: 400 900;
   font-display: swap;
   font-style: normal;
-  font-named-instance: 'Regular';
   src: url('PlayfairDisplay-VariableFont_wght.woff2?v=1.202') format('woff2');
 }
 @font-face {
@@ -110,7 +109,6 @@ Usage:
   font-weight: 400 900;
   font-display: swap;
   font-style: italic;
-  font-named-instance: 'Italic';
   src: url('PlayfairDisplay-Italic-VariableFont_wght.woff2?v=1.202')
     format('woff2');
 }

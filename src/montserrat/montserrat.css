@@ -1,13 +1,13 @@
 /** ============== MONTSERRAT VARIABLE =============== **/
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat var';
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
   src: url('Montserrat-VariableFont_wght.woff2?v=7.222') format('woff2');
 }
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat var';
   font-weight: 100 900;
   font-display: swap;
   font-style: italic;
