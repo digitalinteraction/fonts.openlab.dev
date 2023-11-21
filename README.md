@@ -3,12 +3,12 @@ permalink: /index.html
 layout: html.njk
 ---
 
-These are some curated fonts for Open Lab deployments.
+This site is the documentation for and hosting of curated fonts for Open Lab websites and apps.
 
-Why another font service?
+## Why?
 
-- No tracking
-- Variable + woff2 formats
+- No visitor tracking
+- Modern formats like variable fonts and woff2
 - No reliance on 3rd party services
 
 {% fontPicker %}
