@@ -1,0 +1,83 @@
+/* Variable */
+
+@font-face {
+  font-family: 'Lora var';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('Lora-Italic[wght].woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora var';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('Lora[wght].woff2') format('woff2');
+}
+
+/* Static */
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Lora-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Lora-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('Lora-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('Lora-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Lora-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Lora-SemiBoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('Lora-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('Lora-BoldItalic.woff2') format('woff2');
+}

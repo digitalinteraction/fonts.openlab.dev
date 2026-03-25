@@ -48,6 +48,12 @@ html {
 }
 ```
 
+### Lora
+
+- Version [v3.021](https://github.com/cyrealtype/Lora-Cyrillic)
+- [Website](https://www.cyreal.org/fonts/lora/)
+- [Download](https://fonts.openlab.dev/lora/lora.zip)
+
 ### Playfair
 
 - Version 1.202
