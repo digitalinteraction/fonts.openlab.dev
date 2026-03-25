@@ -10,26 +10,37 @@
       rel="stylesheet"
       href="{{ '/inter/inter.css' | url }}"
       data-font="Inter var"
+      data-weights="100 900"
     />
     <link
       rel="stylesheet"
       href="{{ '/rubik/rubik.css' | url }}"
-      data-font="Rubik"
+      data-font="Rubik var"
+      data-weights="300 900"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/lora/lora.css' | url }}"
+      data-font="Lora var"
+      data-weights="400 700"
     />
     <link
       rel="stylesheet"
       href="{{ '/playfair/playfair.css' | url }}"
       data-font="Playfair Display var"
+      data-weights="400 900"
     />
     <link
       rel="stylesheet"
       href="{{ '/open-sans/open-sans.css' | url }}"
       data-font="Open Sans var"
+      data-weights="300 800"
     />
     <link
       rel="stylesheet"
       href="{{ '/montserrat/montserrat.css' | url }}"
-      data-font="Montserrat"
+      data-font="Montserrat var"
+      data-weights="100 900"
     />
     <link rel="stylesheet" href="https://alembic.openlab.dev/labcoat.css" />
     <style>
@@ -40,18 +51,13 @@
       body {
         --fallback: 'Inter var', Inter, system-ui, sans-serif;
         font-family: var(--font, var(--fallback));
+        font-weight: var(--weight, 400);
       }
-      .field {
-        display: inline-flex;
-        align-items: center;
-        gap: var(--s-3);
-        flex-wrap: wrap;
+      label:has(#font) {
+        --measure: 20ch;
       }
-      .field-label {
-        flex-shrink: 0;
-      }
-      #fontPicker {
-        color: inherit;
+      label:has(#weight) {
+        --measure: 30ch;
       }
       h3 {
         --flow: 2em;
@@ -82,20 +88,44 @@
     </footer>
 
     <script>
+      function setFont(font) {
+        document.documentElement.style.setProperty('--font', `'${font}'`)
+
+        const style = document.querySelector(`[data-font="${font}"]`)
+        if (style.dataset.weights) {
+          const [min, max] = style.dataset.weights.split(/\s+/)
+          document.getElementById('weight').min = min
+          document.getElementById('weight').max = max
+        }
+
+        document.getElementById('weight').value = 400
+        setWeight(400)
+      }
+      function setWeight(value) {
+        document.documentElement.style.setProperty('--weight', value)
+        document.getElementById('weight').previousElementSibling.textContent =
+          `Weight (${value})`
+      }
+
       for (const elem of document.querySelectorAll('link[data-font]')) {
         const option = document
-          .getElementById('fontPicker')
+          .getElementById('font')
           .appendChild(document.createElement('option'))
         option.value = elem.dataset.font
         option.innerText = elem.dataset.font
         option.selected = elem.dataset.font === 'Inter var'
       }
-      document.getElementById('fontPicker').oninput = (e) => {
-        document.documentElement.style.setProperty(
-          '--font',
-          `'${e.target.value}'`
-        )
+
+      document.getElementById('font').oninput = (e) => {
+        setFont(e.target.value)
       }
+
+      document.getElementById('weight').oninput = (e) => {
+        setWeight(e.target.value)
+      }
+
+      document.getElementById('font').value = 'Inter var'
+      setFont('Inter var')
     </script>
 
     <!-- @openlab/alembic inject-js -->
