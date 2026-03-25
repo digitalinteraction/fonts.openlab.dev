@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-for DIR in src/*
+for DIR in source/*
 do
   NAME=$(basename "$DIR")
   pushd "$DIR"

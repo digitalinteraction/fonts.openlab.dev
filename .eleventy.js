@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
     useLabcoat: true,
   })
 
-  eleventyConfig.addPassthroughCopy({ src: '.' })
+  eleventyConfig.addPassthroughCopy({ source: '.' })
   eleventyConfig.addShortcode('fontPicker', () => fontPicker)
 
   return {
