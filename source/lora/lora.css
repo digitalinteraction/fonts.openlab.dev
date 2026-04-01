@@ -1,4 +1,4 @@
-/* Variable */
+/* Variable [legacy] */
 
 @font-face {
   font-family: 'Lora var';
@@ -80,4 +80,23 @@
   font-weight: 700;
   font-display: swap;
   src: url('Lora-BoldItalic.woff2') format('woff2');
+}
+
+/* Variable [new] */
+/* must be declared last to take precidence */
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('Lora[wght].woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('Lora-Italic[wght].woff2') format('woff2');
 }

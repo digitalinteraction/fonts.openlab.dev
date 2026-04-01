@@ -11,7 +11,7 @@ This site is the documentation for and hosting of curated fonts for Open Lab web
 - Modern formats like variable fonts and woff2
 - No reliance on 3rd party services
 
-{% fontPicker %}
+{% include "font-picker.njk" %}
 
 ## Fonts
 

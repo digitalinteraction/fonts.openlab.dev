@@ -21,7 +21,7 @@
     <link
       rel="stylesheet"
       href="{{ '/lora/lora.css' | url }}"
-      data-font="Lora var"
+      data-font="Lora"
       data-weights="400 700"
     />
     <link
@@ -49,9 +49,7 @@
         --fillable: var(--color);
       }
       body {
-        --fallback: 'Inter var', Inter, system-ui, sans-serif;
-        font-family: var(--font, var(--fallback));
-        font-weight: var(--weight, 400);
+        font-family: 'Inter var', Inter, system-ui, sans-serif;
       }
       label:has(#font) {
         --measure: 20ch;
@@ -61,6 +59,16 @@
       }
       h3 {
         --flow: 2em;
+      }
+      label:has(#specimen) {
+        max-width: 100%;
+        font-size: 1.2em;
+      }
+      #specimen {
+        padding: var(--s2) var(--s0);
+        font-family: var(--font, var(--fallback));
+        font-weight: var(--weight, 400);
+        border-color: var(--border);
       }
     </style>
   </head>
@@ -88,8 +96,10 @@
     </footer>
 
     <script>
+      const specimen = document.getElementById('specimen')
+
       function setFont(font) {
-        document.documentElement.style.setProperty('--font', `'${font}'`)
+        specimen.style.setProperty('--font', `'${font}'`)
 
         const style = document.querySelector(`[data-font="${font}"]`)
         if (style.dataset.weights) {
@@ -102,7 +112,7 @@
         setWeight(400)
       }
       function setWeight(value) {
-        document.documentElement.style.setProperty('--weight', value)
+        specimen.style.setProperty('--weight', value)
         document.getElementById('weight').previousElementSibling.textContent =
           `Weight (${value})`
       }
@@ -126,6 +136,16 @@
 
       document.getElementById('font').value = 'Inter var'
       setFont('Inter var')
+
+      const quotes = [
+        `Design is not just what it looks like and feels like. Design is how it works.`, // Steve Jobs
+        `A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.`, // Douglas Adams
+        `Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.`, // Antoine de Saint-Exupér
+        `Good design is as little as possible. Less, but better, because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity.`, //  Dieter Rams
+      ]
+
+      specimen.value = quotes[Math.floor(Math.random() * quotes.length)]
+      specimen.style.height = specimen.scrollHeight + 'px'
     </script>
 
     <!-- @openlab/alembic inject-js -->
